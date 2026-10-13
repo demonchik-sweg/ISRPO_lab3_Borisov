@@ -1,0 +1,11 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "entryPoints": ["src/extension.ts"],
+    "out": "docs",
+    "name": "Memory Estimator Plugin — Lab 3",
+    "includeVersion": true,
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "readme": "README.md",
+    "tsconfig": "tsconfig.json"
+}
