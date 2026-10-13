@@ -1,0 +1,32 @@
+{
+    "name": "memorysize",
+    "displayName": "Memorysize",
+    "description": "Оценивает необходимую память для решения задачи в C++",
+    "version": "0.0.1",
+    "engines": { "vscode": "^1.80.0" },
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [{
+            "command": "memorysize.run",
+            "title": "Memorysize: посчитать память"
+        }],
+        "keybindings": [
+            {
+                "command": "memorysize.run",
+                "key": "ctrl+alt+z",
+                "when": "editorTextFocus && editorLangId == cpp"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.80.0",
+        "@types/node": "18.x",
+        "typescript": "^5.0.0"
+    }
+}
